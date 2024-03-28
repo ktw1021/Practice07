@@ -4,7 +4,11 @@ public abstract class Bird {
     
 	protected String name;
 
-    public void setName(String name) {
+    protected String getName() {
+    	return name;
+    }
+	
+	public void setName(String name) {
     	this.name=name;
     }
     
@@ -13,6 +17,16 @@ public abstract class Bird {
     	
     }
 
+    public void fly() {
+    	
+    }
     
+    public void sing() {
+    	System.out.printf("%s가 소리내어 웁니다.%n",name);
+    }
+    
+    public void showName() {
+    	
+    }
     
 }
