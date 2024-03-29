@@ -2,21 +2,17 @@ package com.javaex.ex02;
 
 public class Sparrow extends Bird {
 	
-	public void setName(String name) {
-		super.name="참새"+"("+name+")";
-		
-	}
-	
+	  @Override
 	  public void sing() {
-		  super.sing();
+		 System.out.println("참새("+getName()+")가 소리내어 웁니다.");
 	    }
 	  @Override
 	    public void fly() {
-	    System.out.printf("%s가 날아다닙니다.%n",name);
+	    System.out.printf("참새(%s)가 날아다닙니다.%n",getName());
 	    }
-	    @Override
+	  @Override
 	    public void showName() {
-	    	System.out.printf("참새의 이름은 %s 입니다.%n",name);
+	    	System.out.printf("참새의 이름은 %s 입니다.%n",getName());
 	    }
 
 }

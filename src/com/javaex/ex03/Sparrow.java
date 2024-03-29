@@ -7,6 +7,8 @@ public class Sparrow implements Soundable {
 		return sparrowSound;
 		
 	}
+
+	@Override
 	public void printSound() {
 		sound();
 	}
